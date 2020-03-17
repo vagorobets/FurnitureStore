@@ -1,0 +1,42 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+body {
+    @include light;
+    color: $text-color;
+}
+
+
+.button-o {
+    border: 2px solid $primary;
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 12px;
+    @include bold;
+    color: $primary;
+    padding: 17px 22px;
+    transition: all .3s ease;
+
+    &:hover{
+        background-color: $primary;
+        color: #fff; 
+    }
+}
+
+.button {
+    border: none;
+    text-transform: uppercase;
+    background-color: $primary;
+    @include bold;
+    color: #fff;
+    transition: all .3s ease;
+    padding: 25px 45px;
+
+    &:hover {
+        background-color: white;
+        outline: 2px solid $primary;
+        color: $primary;
+    }
+}
