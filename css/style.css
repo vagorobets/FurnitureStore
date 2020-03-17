@@ -189,11 +189,13 @@ body {
     transition: all .4s ease;
     -webkit-transform: translateY(-200%);
     -ms-transform: translateY(-200%);
-    transform: translateY(-200%); }
+    transform: translateY(-200%);
+    opacity: 0; }
     .navbar .menu_active {
       -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      transform: translateY(0%); }
+      transform: translateY(0%);
+      opacity: 1; }
     .navbar .menu__nav {
       display: -webkit-box;
       display: -ms-flexbox;

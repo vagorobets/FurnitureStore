@@ -43,9 +43,11 @@
         background-color: $primary;
         transition: all .4s ease;
         transform: translateY(-200%);
+        opacity: 0;
         
         &_active {
             transform: translateY(0%);
+            opacity: 1;
         }
 
         &__nav {
