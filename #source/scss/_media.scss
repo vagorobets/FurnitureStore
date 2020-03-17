@@ -1,0 +1,62 @@
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        padding: 0px 40px;
+    }
+}
+ 
+@media screen and (min-width: 768px) and (max-width: 991px)  {
+    .container {
+        padding: 0px 40px;
+    }
+
+    .navbar {
+        &__mobile, &__landline {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .container {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+    .navbar{
+    &__mobile, &__landline {
+            display: none;
+        }   
+    }
+
+    .button-o {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 576px)  {
+    .container {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+
+    .navbar {
+        .logo, &__mobile, &__landline {
+            display: none;
+        }
+    }
+
+    .menu {
+        top: 60px;
+        &-button {
+            height: 60px;
+        }
+
+        &__nav {
+            flex-direction: column;
+        }
+
+        &__link {
+            margin-bottom: 20px;
+        }
+    }
+
+}

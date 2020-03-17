@@ -42,9 +42,9 @@
         padding: 16px 0px;
         background-color: $primary;
         transition: all .4s ease;
-        transform: translateY(-100%);
+        transform: translateY(-200%);
         
-        &_active: {
+        &_active {
             transform: translateY(0%);
         }
 
