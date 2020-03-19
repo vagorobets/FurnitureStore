@@ -77,6 +77,15 @@ body {
   font-family: 'Proxima Nova Light', sans-serif;
   color: #262626; }
 
+.section {
+  padding: 100px 0; }
+  .section-title {
+    font-size: 30px;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px; }
+
 .button-o {
   border: 2px solid #507fe1;
   text-transform: uppercase;
@@ -299,6 +308,26 @@ input[type='checkbox'] {
     height: 80px;
     width: 100%; }
 
+.feature-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .feature-block__item {
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 17px; }
+  .feature-block__img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px; }
+
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .container {
     padding: 0px 40px; } }
@@ -341,6 +370,12 @@ input[type='checkbox'] {
     width: 100%; }
   .offer .form__input {
     margin-bottom: 20px; }
+  .offer .form__button {
+    height: 50px;
+    padding: 5px; }
+  .offer .feature-block__item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; }
   .input {
     height: 50px; } }
 
@@ -348,6 +383,8 @@ input[type='checkbox'] {
   .container {
     max-width: 100%;
     padding: 0px 20px; }
+  .section-title {
+    font-size: 24px; }
   .navbar .logo, .navbar__mobile, .navbar__landline {
     display: none; }
   .menu {
@@ -360,4 +397,11 @@ input[type='checkbox'] {
       -ms-flex-direction: column;
       flex-direction: column; }
     .menu__link {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  .feature-block__item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; }
+  .feature-block__img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px; } }

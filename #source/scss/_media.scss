@@ -62,6 +62,19 @@
             &__input {
                 margin-bottom: 20px;
             }
+
+            &__button {
+                height: 50px;
+                padding: 5px;
+            }
+        }
+
+        .feature {
+            &-block {
+                &__item {
+                    flex-basis: 50%;
+                }
+            }
         }
     }
     
@@ -74,6 +87,12 @@
     .container {
         max-width: 100%;
         padding: 0px 20px;
+    }
+
+    .section {
+        &-title {
+            font-size: 24px;
+        }
     }
 
     .navbar {
@@ -94,6 +113,19 @@
 
         &__link {
             margin-bottom: 20px;
+        }
+    }
+
+    .feature {
+        &-block {
+            &__item {
+                flex-basis: 50%;
+            }
+            &__img {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 10px;
+            }
         }
     }
 }

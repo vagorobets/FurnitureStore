@@ -8,6 +8,17 @@ body {
     color: $text-color;
 }
 
+.section {
+    padding: 100px 0;
+    &-title {
+        font-size: 30px;
+        @include bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 100px;
+    }
+}
+
 
 .button-o {
     border: 2px solid $primary;
