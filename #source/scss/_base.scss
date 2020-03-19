@@ -9,7 +9,7 @@ body {
 }
 
 .section {
-    padding: 100px 0;
+    padding: 100px 0 0;
     &-title {
         font-size: 30px;
         @include bold;
@@ -49,6 +49,36 @@ body {
         background-color: white;
         outline: 2px solid $primary;
         color: $primary;
+    }
+
+    &-fitting {
+        font-size: 11px;
+        padding: 10px;
+        text-transform: uppercase;
+        color: lighten($primary, 10%);
+        background-color: #fff;
+        border: none;
+        transition: all .3s ease;
+
+        &:hover{
+            background-color: lighten($primary, 10%);
+            color: #fff; 
+        }
+    }
+
+    &-add {
+        background-color: lighten($primary, 10%);
+        text-transform: uppercase;
+        padding: 10px;
+        color: #fff;
+        font-size: 11px;
+        border: none;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: white;
+            color: $primary;
+        }
     }
 }
 

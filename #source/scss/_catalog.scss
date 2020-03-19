@@ -1,0 +1,58 @@
+.catalog {
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        margin-bottom: 7px;
+    }
+
+    &-card {
+        flex-basis: 33%;
+        position: relative;
+        z-index: 0;
+        max-width: 570px;
+        box-shadow: 7px 5px 21px rgba(0,0,0, 0.2);
+    
+        img {
+            width: 100%;
+            height: 250px;
+        }    
+
+        &__buttons {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        &__tag {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            background-color: rgb(141, 141, 141);
+            padding: 5px;
+            color: #fff;
+        }
+
+        &__image {
+            display: block;
+        }
+    }
+
+    &__link {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    &__link-more {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        text-transform: uppercase;
+        display: block;
+    }
+}

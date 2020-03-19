@@ -78,7 +78,7 @@ body {
   color: #262626; }
 
 .section {
-  padding: 100px 0; }
+  padding: 100px 0 0; }
   .section-title {
     font-size: 30px;
     font-family: 'Proxima Nova Semibold', sans-serif;
@@ -115,6 +115,32 @@ body {
     background-color: white;
     outline: 2px solid #507fe1;
     color: #507fe1; }
+  .button-fitting {
+    font-size: 11px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #7c9fe8;
+    background-color: #fff;
+    border: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .button-fitting:hover {
+      background-color: #7c9fe8;
+      color: #fff; }
+  .button-add {
+    background-color: #7c9fe8;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #fff;
+    font-size: 11px;
+    border: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .button-add:hover {
+      background-color: white;
+      color: #507fe1; }
 
 .bg-secondary {
   background: #f1f1f1; }
@@ -151,7 +177,8 @@ input[type='checkbox'] {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 1; }
   .navbar-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -321,12 +348,61 @@ input[type='checkbox'] {
     -ms-flex-preferred-size: 33.33%;
     flex-basis: 33.33%;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
     font-size: 17px; }
   .feature-block__img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px; }
+    width: 180px;
+    height: 180px; }
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.catalog__card {
+  margin-bottom: 7px; }
+
+.catalog-card {
+  -ms-flex-preferred-size: 33%;
+  flex-basis: 33%;
+  position: relative;
+  z-index: 0;
+  max-width: 570px;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.2); }
+  .catalog-card img {
+    width: 100%;
+    height: 250px; }
+  .catalog-card__buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .catalog-card__tag {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    background-color: #8d8d8d;
+    padding: 5px;
+    color: #fff; }
+  .catalog-card__image {
+    display: block; }
+
+.catalog__link {
+  text-align: center;
+  margin-top: 60px; }
+
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 15px; }
+
+.catalog__description {
+  text-transform: uppercase;
+  display: block; }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .container {
@@ -336,7 +412,10 @@ input[type='checkbox'] {
   .container {
     padding: 0px 40px; }
   .navbar__mobile, .navbar__landline {
-    display: none; } }
+    display: none; }
+  .catalog-card {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
 
 @media screen and (max-width: 768px) {
   .container {
@@ -377,7 +456,17 @@ input[type='checkbox'] {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; }
   .input {
-    height: 50px; } }
+    height: 50px; }
+  .catalog-block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .catalog-card {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+    .catalog-card img {
+      width: 100%;
+      height: 300px; } }
 
 @media screen and (max-width: 576px) {
   .container {
