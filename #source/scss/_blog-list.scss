@@ -1,0 +1,41 @@
+.blog {
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+
+    &__title {
+        font-size: 24px;
+        @include bold;
+    }
+
+    &-link-more {
+        color: $primary;
+        text-decoration: underline;
+        font-size: 16px;
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        
+        &__image {
+            height: 200px;
+            overflow: hidden;
+            width: 270px;
+
+            &:hover {
+                filter: brightness(40%);
+            }
+        }
+    }
+
+    &-card {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+}
