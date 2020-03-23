@@ -1,4 +1,4 @@
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1299px) {
     .container {
         padding: 0px 40px;
     }
@@ -17,6 +17,12 @@
               margin-left: 50px;
               max-width: 200px;
           }  
+        }
+    }
+
+    .price {
+        &-card {
+            flex-basis: 33%;
         }
     }
 }
@@ -51,6 +57,12 @@
               margin-right: 100px;
               max-width: 200px;
           }  
+        }
+    }
+
+    .price {
+        &-card {
+            flex-basis: 50%;
         }
     }
 }
@@ -157,6 +169,12 @@
           }
         }
     }
+
+    .price {
+        &-card {
+            flex-basis: 50%;
+        }
+    }
 }
 
 @media screen and (max-width: 576px)  {
@@ -202,6 +220,12 @@
                 height: 150px;
                 margin-bottom: 10px;
             }
+        }
+    }
+
+    .price {
+        &-card {
+            flex-basis: 100%;
         }
     }
 }
