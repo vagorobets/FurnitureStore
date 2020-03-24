@@ -293,12 +293,16 @@ input[type='checkbox'] {
 .offer {
   padding: 129px 0; }
   .offer-block {
-    background: #fff url(../../img/offer-bg.jpg) no-repeat center right;
-    background-size: contain;
     -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
     padding: 80px;
     margin-top: -200px; }
+    .offer-block_calc-bg {
+      background: #fff url(../../img/offer-calc-bg.jpg) no-repeat center right;
+      background-size: contain; }
+    .offer-block_price-bg {
+      background: #fff url(../../img/offer-price-bg.jpg) no-repeat center right;
+      background-size: contain; }
   .offer__title {
     font-size: 25px;
     text-transform: uppercase;
@@ -307,7 +311,8 @@ input[type='checkbox'] {
   .offer__subtitle {
     display: block;
     font-size: 21px;
-    margin-bottom: 48px; }
+    margin-bottom: 48px;
+    max-width: 800px; }
   .offer .form__row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -316,7 +321,7 @@ input[type='checkbox'] {
     -ms-flex-align: center;
     align-items: center;
     max-width: 900px;
-    margin-bottom: 25px; }
+    margin-bottom: 30px; }
     .offer .form__row:last-child {
       margin-bottom: 0; }
   .offer .form__label {
@@ -334,6 +339,10 @@ input[type='checkbox'] {
   .offer .form__button {
     height: 80px;
     width: 100%; }
+  .offer .form__policy {
+    display: inline-block;
+    margin-left: 45px;
+    font-size: 15px; }
 
 .feature-block {
   display: -webkit-box;
@@ -439,7 +448,7 @@ input[type='checkbox'] {
       z-index: -1;
       bottom: 0;
       left: 0;
-      height: 80px;
+      height: 100px;
       width: 100%;
       padding: 20px;
       padding-top: 0;
@@ -449,7 +458,7 @@ input[type='checkbox'] {
       transition: all .5s ease; }
     .price-card:hover .price-card__button {
       z-index: 1;
-      bottom: 125px;
+      bottom: 105px;
       opacity: 1; }
     .price-card:hover .price-card__image {
       -webkit-filter: grayscale(75%);
@@ -492,7 +501,8 @@ input[type='checkbox'] {
       flex-wrap: wrap; }
 
 .reviews {
-  background-color: #f5f6f8; }
+  background-color: #f5f6f8;
+  padding-bottom: 150px; }
   .reviews-slider {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -621,6 +631,10 @@ input[type='checkbox'] {
   .offer .form__button {
     height: 50px;
     padding: 5px; }
+  .offer .form__policy {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0 0; }
   .offer .feature-block__item {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; }
