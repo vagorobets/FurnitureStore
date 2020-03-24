@@ -544,7 +544,7 @@ input[type='checkbox'] {
       font-family: 'Proxima Nova Semibold', sans-serif; }
 
 .factory {
-  padding: 0; }
+  padding: 0 0 100px; }
   .factory-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -573,9 +573,8 @@ input[type='checkbox'] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .contacts-block__item {
@@ -588,6 +587,62 @@ input[type='checkbox'] {
     color: #262626; }
   .contacts__address {
     font-style: normal; }
+
+.questions {
+  padding-bottom: 100px; }
+  .questions__title {
+    font-size: 30px;
+    font-family: 'Proxima Nova Semibold', sans-serif; }
+  .questions__link {
+    font-size: 24px;
+    color: #507fe1; }
+  .questions-block {
+    max-width: 800px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+
+.footer {
+  padding: 40px 0;
+  background-color: #262626;
+  color: #fff; }
+  .footer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .footer a {
+    color: #fff; }
+  .footer__title {
+    margin-bottom: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova Semibold', sans-serif; }
+  .footer__subtitle {
+    display: block;
+    margin-bottom: 48px; }
+  .footer__copy {
+    color: #767676; }
+  .footer__contacts {
+    text-align: right; }
+  .footer__phone {
+    display: block;
+    font-size: 20px;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    margin-bottom: 20px; }
+  .footer__mail {
+    display: block;
+    margin-bottom: 20px; }
+  .footer-social__link {
+    margin-left: 10px; }
 
 @media screen and (min-width: 1020px) and (max-width: 1299px) {
   .container {

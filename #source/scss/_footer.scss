@@ -1,0 +1,54 @@
+.footer {
+    padding: 40px 0;
+    background-color: $text-color;
+    color: #fff;
+
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    a {
+        color: #fff;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        font-size: 18px;
+        text-transform: uppercase;
+        @include bold;
+    }
+
+    &__subtitle {
+        display: block;
+        margin-bottom: 48px;
+    }
+
+    &__copy {
+        color: #767676;
+    }
+
+    
+    &__contacts {
+        text-align: right;
+    }
+
+    &__phone {
+        display: block;
+        font-size: 20px;
+        @include bold;
+        margin-bottom: 20px;
+    }
+
+    &__mail {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &-social {
+        &__link {
+            margin-left: 10px;
+        }
+    } 
+}
