@@ -566,6 +566,29 @@ input[type='checkbox'] {
       .factory-block__text p {
         margin-bottom: 15px; }
 
+.contacts {
+  padding-bottom: 150px;
+  background-color: #f6f7f9; }
+  .contacts-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .contacts-block__item {
+      text-align: center; }
+  .contacts__image {
+    margin-bottom: 25px; }
+  .contacts__text {
+    font-size: 16px; }
+  .contacts__link {
+    color: #262626; }
+  .contacts__address {
+    font-style: normal; }
+
 @media screen and (min-width: 1020px) and (max-width: 1299px) {
   .container {
     padding: 0px 40px; }
@@ -734,7 +757,13 @@ input[type='checkbox'] {
     margin-left: 0px;
     -ms-flex-preferred-size: 80%;
     flex-basis: 80%;
-    text-align: center; } }
+    text-align: center; }
+  .contacts-block__item {
+    width: 100%;
+    margin-bottom: 30px; }
+  .contacts__address {
+    max-width: 200px;
+    margin: auto; } }
 
 @media screen and (max-width: 576px) {
   .container {
