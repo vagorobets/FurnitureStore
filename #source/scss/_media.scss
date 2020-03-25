@@ -131,6 +131,22 @@
             }
         }
     }
+
+    .before {
+        &-slider {
+            &-wrap {
+                max-width: 450px;
+            }
+
+            &-arrows {
+                display: none;
+            }
+
+            &__dots {
+                margin-top: -150px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -289,6 +305,32 @@
             margin: auto;
         }
     }
+
+    .before {
+    &-slider {
+        &-wrap {
+            max-width: 400px;
+            }
+
+            &-arrows {
+                display: none;
+            }
+
+            &__dots {
+                margin-top: -150px;
+            }
+        }
+    }
+
+    .reviews {
+        &-slider {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+    }
 }
 
 @media screen and (max-width: 576px)  {
@@ -368,6 +410,14 @@
             margin-left: 0px;
             flex-basis: 80%;
             text-align: center;
+        }
+    }
+
+    .reviews {
+        &-slider {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 }
