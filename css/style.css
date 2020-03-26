@@ -670,7 +670,8 @@ input[type='checkbox'] {
     -ms-flex-pack: justify;
     justify-content: space-between; }
     .reviews-slider__item {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 30px; }
     .reviews-slider__img {
       display: block;
       width: 70px;
@@ -686,7 +687,7 @@ input[type='checkbox'] {
       padding: 20px;
       background-color: #fff;
       border-radius: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       line-height: 20px; }
       .reviews-slider__text:after {
         content: '';
@@ -721,7 +722,8 @@ input[type='checkbox'] {
       margin-left: 70px;
       -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-      font-size: 18px; }
+      font-size: 18px;
+      line-height: 20px; }
       .factory-block__text p {
         margin-bottom: 15px; }
 
