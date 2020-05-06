@@ -1,3 +1,4 @@
 # FurnitureStore
 
-Creating a website using html and scss. As well as block division by files
+Creating a responsive website using html and scss. As well as block division by files
+Link - vagorobets.github.io/FurnitureStore
